@@ -2,67 +2,180 @@
 <html>
 
 <head>
-  <title>Blog posts</title>
-  <style>
-    table,
-    th,
-    td {
-      padding: 10px;
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
-  </style>
+    <title>Blog posts</title>
+    <style>
+        
+        .title {
+            margin: 0px;
+            border: 2px solid rgba(0, 0, 0, 0.493);
+            background-color:rgba(31, 31, 250, 0.623);
+            height: 75px;
+            text-align: center;
+            padding-left: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+        .wholePage {
+            margin: 10px;
+            background-color: cornflowerblue;
+        }
+        .selector {
+            margin-top: 15px;
+            background-color: cornsilk;
+            height: 40px;
+            border: 2px solid black;
+            text-align: left; 
+        }
+        /* Dropdown Button */
+        .dropbtn {
+        color: black;
+        border: none;
+        background-color: cornsilk;
+        padding: 10px;
+        font-size: 15px;
+        
+        }
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #5f5b5b;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+        /* Links inside the dropdown */
+        .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #ddd;}
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {display: block;}
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color: black;
+            color:honeydew;
+        }
+        table,
+        th,
+        td {
+            background-color: white;
+            padding: 10px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .tablePic {
+            background-color: cornflowerblue;
+        }
+        .container {
+            background-color: cornflowerblue;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Gianna's WebDev Blog</h1>
-    <main>
-        <ul><li><a class="reference internal" href="#blog1" id="id3">Blog 1</a></li>
-            <li>Blog 2</li> 
-            <li>Blog 3</li> 
-            <li>Blog 4</li> 
-        </ul>
-        <h2>
-            <a class="toc-backref" href="#blog1">Blog 1: Sept. 3rd, 2021</a>
-            </h2>
-        <p>
-            This week we read chapter 1 and began learning HTML. Before this class,
-            I haven't had much experience with html. One of the readings discussed 
-            the anatomy of an HTML document which was described as a tree (as shown 
-            in the image below). This explanation helped me to understand the best 
-            way to start and layout my HTML document. The readings then talked about 
-            different tags such as headers, paragraphs, blockquotes, ordered and unordered
-            lists, images and links.
-            <br><img src="https://allover.twodee.org/images/html-tree.png" width="500">
-            <br>
-            <br> In chapter 2, I learned about more tags such as the figure tag which can
-            people to add a caption to some content. The chapter also discussed how to create
-            table in html and using 
-            <a href="https://www.w3docs.com/snippets/html/how-to-add-border-to-html-table.html"> w3docs</a>
-            I was able to add a border to the table such as the one below.
-        </p>
-        <table>
-            <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Country Name</th>
-            </tr>
-            <tr>
-                <td>Gianna Casolara inc.</td>
-                <td>Gianna Casolara</td>
-                <td>United States</td>
-            </tr>
-            <tr>
-                <td>Jack Button Corp.</td>
-                <td>Jack Button</td>
-                <td>Mexico</td>
-            </tr>
-
-        </table>
-            
+    <div class="wholePage">
         
-    </main>
-    <! --- create a link to blog post 1 that takes you to that blog post on that page --->
+        <div class="title"><h1>Gianna's WebDev Blog</h1></div>
+        <div class="selector">
+            <div class="dropdown">
+                <button class="dropbtn">Blogs &#9776</button>
+                <div class="dropdown-content">
+                  <a href="#Blog1">Blog 1</a>
+                  <a href="#Blog2">Blog 2</a>
+                  <a href="#">Blog 3</a>
+                </div>
+              </div>
+        </div>
+
+        
+        <h2><a name="Blog1">Blog 1: Sept. 3rd, 2021</a></h2>
+        
+        <div>
+            <p>
+                This week we read chapter 1 and began learning HTML. Before this class,
+                I haven't had much experience with html. One of the readings discussed 
+                the anatomy of an HTML document which was described as a tree (as shown 
+                in the image below). This explanation helped me to understand the best 
+                way to start and layout my HTML document. The readings then talked about 
+                different tags such as headers, paragraphs, blockquotes, ordered and unordered
+                lists, images and links.
+                <br><img src="https://allover.twodee.org/images/html-tree.png" width="500">
+                <br>
+                <br> In chapter 2, I learned about more tags such as the figure tag which can
+                people to add a caption to some content. The chapter also discussed how to create
+                table in html and using 
+                <a href="https://www.w3docs.com/snippets/html/how-to-add-border-to-html-table.html"> w3docs</a>
+                I was able to add a border to the table such as the one below using the follwoing code in my style tag. <br>
+                <div class="tablePic">
+                    <div class="container">
+                        <pre>
+                                    table,
+                                    th,
+                                    td {
+                                        background-color: white;
+                                        padding: 10px;
+                                        border: 1px solid black;
+                                        border-collapse: collapse;
+                                    }
+                        </pre>
+                    </div>
+                    <div class="container">
+                        <table>
+                            <tr>
+                                <th>Company</th>
+                                <th>Contact</th>
+                                <th>Country Name</th>
+                            </tr>
+                            <tr>
+                                <td>Gianna Casolara inc.</td>
+                                <td>Gianna Casolara</td>
+                                <td>United States</td>
+                            </tr>
+                            <tr>
+                                <td>Jack Button Corp.</td>
+                                <td>Jack Button</td>
+                                <td>Mexico</td>
+                            </tr>
+            
+                        </table>
+                    </div>
+                </div>
+            </p>
+
+            
+        </div>
+        <div class="container">
+            <h2><a name="Blog2">Blog 2: Sept. 9rd, 2021</a></h2>
+
+            <div>
+                <p>
+                    This week we put what we read in chapter 2 to the test! This chapter discussed things like html entities which are
+                    used for reserved html characters such as &lt; or &gt;. We also talked a little bit about how buttons in html work. 
+                    This allowed me to create the blogs button at the top of this page where if you hover over it, it gives you a list
+                    of all the blog posts on my page. When you select a blog the page should redirect you to that post. I am currently 
+                    on how to make it move so that the post is on the top of the page.
+
+                    This week we read chapter 3 and 4. We learned about css and how to to 
+                    make classes for different tags. This allows us to make the page more exciting 
+                    by adding color and being able to create different sections.
+                    These chapters discussed how to change fonts, background colors, and font colors 
+                    which allowed me update my blog page to be prettier
+                </p>
+            </div>
+        </div>
+    </div>
+    
+   
 </body>
 
 </html>
