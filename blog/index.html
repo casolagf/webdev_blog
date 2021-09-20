@@ -3,96 +3,21 @@
 
 <head>
     <title>Blog posts</title>
-    <style>
-        
-        .title {
-            margin: 0px;
-            border: 2px solid rgba(0, 0, 0, 0.493);
-            background-color:rgba(31, 31, 250, 0.623);
-            height: 75px;
-            text-align: center;
-            padding-left: 10px;
-            font-family: 'Courier New', Courier, monospace;
-            color: white;
-        }
-        .wholePage {
-            margin: 10px;
-            background-color: cornflowerblue;
-        }
-        .selector {
-            margin-top: 15px;
-            background-color: cornsilk;
-            height: 40px;
-            border: 2px solid black;
-            text-align: left; 
-        }
-        /* Dropdown Button */
-        .dropbtn {
-        color: black;
-        border: none;
-        background-color: cornsilk;
-        padding: 10px;
-        font-size: 15px;
-        
-        }
-        /* The container <div> - needed to position the dropdown content */
-        .dropdown {
-        position: relative;
-        display: inline-block;
-        }
-        /* Dropdown Content (Hidden by Default) */
-        .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #5f5b5b;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        }
-        /* Links inside the dropdown */
-        .dropdown-content a {
-        color: white;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        }
-        /* Change color of dropdown links on hover */
-        .dropdown-content a:hover {background-color: #ddd;}
-        /* Show the dropdown menu on hover */
-        .dropdown:hover .dropdown-content {display: block;}
-        /* Change the background color of the dropdown button when the dropdown content is shown */
-        .dropdown:hover .dropbtn {
-            background-color: black;
-            color:honeydew;
-        }
-        table,
-        th,
-        td {
-            background-color: white;
-            padding: 10px;
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        .tablePic {
-            background-color: cornflowerblue;
-        }
-        .container {
-            background-color: cornflowerblue;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet" type='text/css' >
+    
 </head>
 
 <body>
     <div class="wholePage">
         
-        <div class="title"><h1>Gianna's WebDev Blog</h1></div>
+        <div class="title"><h1><a name="Top">Gianna's WebDev Blog</a></h1></div>
         <div class="selector">
             <div class="dropdown">
                 <button class="dropbtn">Blogs &#9776</button>
                 <div class="dropdown-content">
                   <a href="#Blog1">Blog 1</a>
                   <a href="#Blog2">Blog 2</a>
-                  <a href="#">Blog 3</a>
+                  <a href="#Blog3">Blog 3</a>
                 </div>
               </div>
         </div>
@@ -100,8 +25,9 @@
         
         <h2><a name="Blog1">Blog 1: Sept. 3rd, 2021</a></h2>
         
-        <div>
+        <div class="posts">
             <p>
+                <h3>WebDev Aspects: </h3>
                 This week we read chapter 1 and began learning HTML. Before this class,
                 I haven't had much experience with html. One of the readings discussed 
                 the anatomy of an HTML document which was described as a tree (as shown 
@@ -109,7 +35,8 @@
                 way to start and layout my HTML document. The readings then talked about 
                 different tags such as headers, paragraphs, blockquotes, ordered and unordered
                 lists, images and links.
-                <br><img src="https://allover.twodee.org/images/html-tree.png" width="500">
+                <br>
+                <img src="https://allover.twodee.org/images/html-tree.png" width="500">
                 <br>
                 <br> In chapter 2, I learned about more tags such as the figure tag which can
                 people to add a caption to some content. The chapter also discussed how to create
@@ -119,14 +46,14 @@
                 <div class="tablePic">
                     <div class="container">
                         <pre>
-                                    table,
-                                    th,
-                                    td {
-                                        background-color: white;
-                                        padding: 10px;
-                                        border: 1px solid black;
-                                        border-collapse: collapse;
-                                    }
+                            table,
+                            th,
+                            td {
+                                background-color: white;
+                                padding: 10px;
+                                border: 1px solid black;
+                                border-collapse: collapse;
+                            }
                         </pre>
                     </div>
                     <div class="container">
@@ -154,16 +81,16 @@
 
             
         </div>
-        <div class="container">
-            <h2><a name="Blog2">Blog 2: Sept. 9rd, 2021</a></h2>
+        
+        <h2><a name="Blog2">Blog 2: Sept. 9rd, 2021</a></h2>
 
-            <div>
+        <div class="posts">
                 <p>
                     This week we put what we read in chapter 2 to the test! This chapter discussed things like html entities which are
                     used for reserved html characters such as &lt; or &gt;. We also talked a little bit about how buttons in html work. 
                     This allowed me to create the blogs button at the top of this page where if you hover over it, it gives you a list
                     of all the blog posts on my page. When you select a blog the page should redirect you to that post. I am currently 
-                    on how to make it move so that the post is on the top of the page.
+                    on how to make it move so that the post is on the top of the page. <br> <br>
 
                     This week we read chapter 3 and 4. We learned about css and how to to 
                     make classes for different tags. This allows us to make the page more exciting 
@@ -171,10 +98,41 @@
                     These chapters discussed how to change fonts, background colors, and font colors 
                     which allowed me update my blog page to be prettier
                 </p>
-            </div>
         </div>
+
+
+        <h2><a name="Blog3">Blog 3: Sept. 19th, 2021</a></h2>
+
+        <div class="posts">
+                <p>
+                    For this blog post we were asked to chose one of the aspects of web development and 
+                    according to 
+                    <a href="https://www.forbes.com/sites/forbescommunicationscouncil/2019/01/28/seven-aspects-of-website-design-crucial-for-drawing-in-customers/?sh=463cb4264137"> Forbes.com</a>
+                    , there are 7 aspects of web development that are very important to attract users. For 
+                    the purpose of this blog post, I am going to discuss the importance of navigation on a 
+                    web page since we will be building a static site for a customer in this class.
+                    <br><br>
+                    Navigation is important in web developement because the users are looking for information 
+                    and they don't want to hav to figure out how to work the website as well. For example,  
+                    when I was looking for a source to use for this article, I ran into sites that made it hard 
+                    for me to find the information I wanted. So of cource, in pure GenZ fashion, I just went to 
+                    a different page to get the information. If was a user looking to buy an item for that site, 
+                    the site would have lost my business. One way that can allow you site to be more user friendly 
+                    in terms of navigation, is to have a floating optios or menu bar on the page. <br>
+                    An example of this would be
+                    <a href="https://www.harrisonburgelectric.com/"> Harrisonburgelectric.com</a>'s 
+                    page. As you can see when you load the page,  the menu bar is located at the top, but as you 
+                    scroll down the menu bar stays at the top. This allows easy navigation to anywhere on the site.
+
+                </p>
+        </div>
+        <br>
     </div>
-    
+    <footer>
+        <a href="#Top">Top of Page</a> <br>
+        Author: Gianna Casolara<br><br>
+
+    </footer>
    
 </body>
 
